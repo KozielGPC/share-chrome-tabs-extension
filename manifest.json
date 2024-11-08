@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "Tab Saver",
+    "version": "1.0",
+    "description": "Save and export open tabs as JSON",
+    "permissions": ["tabs", "storage"],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  
