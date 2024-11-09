@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tab Saver</title>
-  <link rel="stylesheet" href="popup.css"> <!-- Link to popup.css -->
+  <link rel="stylesheet" href="popup.css">
 </head>
 <body>
   <div class="container">
@@ -13,13 +13,11 @@
     <ul id="snapshotList"></ul>
   </div>
 
-  <!-- Modal Structure -->
   <div class="modal-overlay" id="modalOverlay">
     <div class="modal">
       <h2>Create Snapshot</h2>
       <input type="text" id="modalSnapshotName" placeholder="Enter snapshot name">
       <div class="tab-list" id="tabList">
-        <!-- Dynamically generated tab list checkboxes -->
       </div>
       <div class="modal-buttons">
         <button class="modal-button cancel-button" id="cancelModal">Cancel</button>
