@@ -1,13 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tab Saver</title>
+  <link rel="stylesheet" href="popup.css"> <!-- Link to popup.css -->
 </head>
 <body>
-  <button id="saveTabs">Save Tabs</button>
-  <button id="exportTabs">Export Tabs</button>
-  <button id="importTabs">Import Tabs</button>
-  <input type="file" id="importFile" style="display: none" />
+  <div class="container">
+    <h1>Tab Saver</h1>
+    <button class="button" id="saveTabs">Add New Snapshot</button>
+    <ul id="snapshotList"></ul>
+  </div>
+
+  <!-- Modal Structure -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <h2>Create Snapshot</h2>
+      <input type="text" id="modalSnapshotName" placeholder="Enter snapshot name">
+      <div class="tab-list" id="tabList">
+        <!-- Dynamically generated tab list checkboxes -->
+      </div>
+      <div class="modal-buttons">
+        <button class="modal-button cancel-button" id="cancelModal">Cancel</button>
+        <button class="modal-button save-button" id="confirmSaveTabs">Save</button>
+      </div>
+    </div>
+  </div>
+
   <script src="popup.js"></script>
 </body>
 </html>
