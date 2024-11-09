@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Tab Saver",
+    "name": "Tab Saver by Koziel",
     "version": "1.0",
-    "description": "Save and export open tabs as JSON",
+    "description": "Save tabs snapshots and open by clicking on the snapshot name. Import/Export open tabs as JSON",
     "permissions": ["tabs", "storage"],
     "action": {
       "default_popup": "popup.html"
